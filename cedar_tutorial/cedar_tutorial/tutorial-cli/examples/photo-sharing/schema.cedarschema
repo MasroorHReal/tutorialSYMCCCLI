@@ -1,0 +1,6 @@
+entity User;
+entity Album { owner: User, public: Bool };
+action viewAlbum appliesTo {
+    principal: [User],
+    resource: [Album]
+};

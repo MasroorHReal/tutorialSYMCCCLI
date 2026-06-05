@@ -1,0 +1,33 @@
+[
+    {
+        "uid": { "__entity": { "type": "Team", "id": "engineering" } },
+        "attrs": {},
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Employee", "id": "alice" } },
+        "attrs": {},
+        "parents": [{ "__entity": { "type": "Team", "id": "engineering" } }]
+    },
+    {
+        "uid": { "__entity": { "type": "Employee", "id": "bob" } },
+        "attrs": {},
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Project", "id": "roadmap" } },
+        "attrs": {
+            "team": { "__entity": { "type": "Team", "id": "engineering" } },
+            "internal": true
+        },
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Project", "id": "status-page" } },
+        "attrs": {
+            "team": { "__entity": { "type": "Team", "id": "engineering" } },
+            "internal": false
+        },
+        "parents": []
+    }
+]

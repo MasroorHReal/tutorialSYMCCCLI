@@ -1,0 +1,11 @@
+entity Employee in [Team];
+entity Team;
+entity Project { team: Team, internal: Bool };
+action readProject appliesTo {
+    principal: [Employee],
+    resource: [Project]
+};
+action writeProject appliesTo {
+    principal: [Employee],
+    resource: [Project]
+};

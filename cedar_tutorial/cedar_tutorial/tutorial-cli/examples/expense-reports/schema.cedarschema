@@ -1,0 +1,7 @@
+entity Department;
+entity Employee { department: Department };
+entity ExpenseReport { amount: Long, submitter: Employee };
+action approveExpense appliesTo {
+    principal: [Employee],
+    resource: [ExpenseReport]
+};

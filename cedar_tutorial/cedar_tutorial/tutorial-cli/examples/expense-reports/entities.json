@@ -1,0 +1,50 @@
+[
+    {
+        "uid": { "__entity": { "type": "Department", "id": "engineering" } },
+        "attrs": {},
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Department", "id": "finance" } },
+        "attrs": {},
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Employee", "id": "alice" } },
+        "attrs": {
+            "department": { "__entity": { "type": "Department", "id": "engineering" } }
+        },
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "Employee", "id": "bob" } },
+        "attrs": {
+            "department": { "__entity": { "type": "Department", "id": "finance" } }
+        },
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "ExpenseReport", "id": "report-500" } },
+        "attrs": {
+            "amount": 500,
+            "submitter": { "__entity": { "type": "Employee", "id": "alice" } }
+        },
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "ExpenseReport", "id": "report-5000" } },
+        "attrs": {
+            "amount": 5000,
+            "submitter": { "__entity": { "type": "Employee", "id": "alice" } }
+        },
+        "parents": []
+    },
+    {
+        "uid": { "__entity": { "type": "ExpenseReport", "id": "report-50000" } },
+        "attrs": {
+            "amount": 50000,
+            "submitter": { "__entity": { "type": "Employee", "id": "alice" } }
+        },
+        "parents": []
+    }
+]
